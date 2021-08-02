@@ -13,7 +13,7 @@ const AddUser = (props) => {
 
   const addUserHandler = (event) => {
     event.preventDefault();
-    //Prefer ref's when you just have to read the value
+    //Prefer ref's when you just have to read the value. This is also called uncontrolled components.
     const enteredName = nameInputRef.current.value;
     const enteredUserAge = ageInputRef.current.value;
     if (enteredName.trim().length === 0 || enteredUserAge.trim().length === 0) {
